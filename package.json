@@ -1,0 +1,24 @@
+{
+  "name": "auranexus",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "10.15.0"
+  },
+  "scripts": {
+    "build": "yarn --cwd client && yarn --cwd client run build",
+    "postinstall": "yarn --cwd run build"
+  },
+  "lint-staged": {
+    "client/src/**/*.{js,jsx,json,css}": [
+      "prettier --write --config ./.prettierrc.yaml",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.2.1",
+    "prettier": "^1.7.0"
+  },
+  "dependencies": {}
+}
