@@ -36,7 +36,7 @@ git push heroku master
 
 ## Misc
 
-If you want to clone this project and adjust the naming to be something other than 'django-react-docker-heroku', see below and substitute accordingly:
+If you want to clone this project and adjust the naming to be something other than 'django-react-docker-heroku', see below and substitute accordingly. For the DB_NAME, avoid hyphens else you'll need to do some escaping. Use underscores instead.
 
 ```
 mv ./server/django-react-docker-heroku/ ./server/<NAME>
