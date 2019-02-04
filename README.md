@@ -56,4 +56,6 @@ sed -i 's/django-react-docker-heroku/<NAME>/g' ./docker/Docker.server/entrypoint
 sed -i 's/django-react-docker-heroku/<NAME>/g' ./docker/Docker.server/start_gunicorn.sh
 ```
 
+PRs welcome from you script wizards to tighten this up. :)
+
 
