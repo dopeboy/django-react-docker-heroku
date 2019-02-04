@@ -2,7 +2,7 @@
 
 This is a starter project that has a Django backend, React frontend. It runs inside a Docker container. It is preconfigured to deploy on Heroku too (sans Docker).
 
-The starter code consists of one GraphQL endpoint that is read on the frontend.
+The starter code consists of one GraphQL endpoint that is read on the frontend. The frontend is configured to be written in TypeScript. It was generated from CRA. The reader is encouraged to regenerate this in the future.
 
 ## Development
 
