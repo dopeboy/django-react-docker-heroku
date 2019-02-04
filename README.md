@@ -31,6 +31,7 @@ heroku addons:create heroku-postgresql:hobby-dev
 heroku buildpacks:add heroku/nodejs
 heroku buildpacks:add heroku/python
 heroku config:set SECRET_KEY='123'
+git push heroku master
 ```
 
 ## Misc
