@@ -141,7 +141,7 @@ GRAPHENE = {
 }
 
 GRAPHQL_DEBUG = env('GRAPHQL_DEBUG', default=DEBUG)
-django_heroku.settings(locals(), staticfiles=False)
+django_heroku.settings(locals())
 
 # TODO - needs more investigation. For now:
 # https://github.com/kennethreitz/dj-database-url/issues/107
