@@ -42,7 +42,8 @@ If you want to clone this project and adjust the naming to be something other th
 mv ./server/django-react-docker-heroku/ ./server/<NAME>
 sed -i 's/django-react-docker-heroku-db/<NAME>-db/g' ./d
 sed -i 's/django-react-docker-heroku-db/<NAME>-db/g' ./docker-compose.yml
-sed -i 's/-d django-react-docker-heroku/<DB_NAME>/g' ./d
+sed -i 's/-d django-react-docker-heroku/<NAME>/g' ./d
+sed -i 's/django_react_docker_heroku/<DB_NAME>/g' ./d
 sed -i 's/EXISTS django_react_docker_heroku/EXISTS <DB_NAME>/g' ./d
 sed -i 's/DATABASE django_react_docker_heroku/DATABASE <DB_NAME>/g' ./d
 sed -i 's/django_react_docker_heroku/<DB_NAME>/g' ./.env.example
