@@ -141,8 +141,9 @@ GRAPHENE = {
 }
 
 GRAPHQL_DEBUG = env('GRAPHQL_DEBUG', default=DEBUG)
-django_heroku.settings(locals())
 
-# TODO - needs more investigation. For now:
-# https://github.com/kennethreitz/dj-database-url/issues/107
-del DATABASES['default']['OPTIONS']['sslmode']
+if not DEBUG:
+    django_heroku.settings(locals())
+    # TODO - needs more investigation. For now:
+    # https://github.com/kennethreitz/dj-database-url/issues/107
+    del DATABASES['default']['OPTIONS']['sslmode']
