@@ -4,13 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [requires]
-python_version = "3.6"
+python_version = "3.8.0"
 
 [packages]
-django = "==2.1"
-"psycopg2-binary" = "==2.7.4"
-graphene = "==2.1.3"
-graphene-django = "==2.1.0"
+django = "==3.0.1"
+psycopg2 = "==2.8.4"
+graphene = "==2.1.8"
+graphene-django = "==2.7.1"
 django-cors-headers = "*"
 gunicorn = "*"
 django-environ = "*"
