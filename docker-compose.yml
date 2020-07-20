@@ -3,6 +3,8 @@ services:
   db:
     image: postgres
     container_name: django-react-docker-heroku-db
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: "trust"
   django-react-docker-heroku:
     build:
       context: .
