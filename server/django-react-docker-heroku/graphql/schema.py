@@ -5,4 +5,4 @@ class Query(graphene.ObjectType):
     yay = graphene.String()
 
     def resolve_yay(self, info, **kwargs):
-        return "woot"
+        return "this came from the backend!"
