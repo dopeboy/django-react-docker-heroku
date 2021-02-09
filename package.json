@@ -7,7 +7,6 @@
   },
   "scripts": {
     "build": "yarn --cwd client && yarn --cwd client run build",
-    "postinstall": "yarn --cwd run build"
   },
   "lint-staged": {
     "client/src/**/*.{js,jsx,json,css}": [
