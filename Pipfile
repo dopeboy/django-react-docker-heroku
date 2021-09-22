@@ -7,7 +7,7 @@ name = "pypi"
 python_version = "3.9.1"
 
 [packages]
-django = "==3.1.6"
+django = "==3.1.13"
 psycopg2 = "==2.8.6"
 graphene = "==2.1.8"
 graphene-django = "==2.15.0"
